@@ -49,14 +49,15 @@ export default function Index() {
     const navTimer = DEBUG_GUIDE
       ? undefined
       : setTimeout(async () => {
-          // Check user role and navigate accordingly
+          // Check if user is authenticated and navigate accordingly
           const userRole = await AsyncStorage.getItem('userRole');
           if (userRole === 'student') {
             router.replace('/(tabs)/home');
           } else if (userRole === 'staff') {
             router.replace('/(staff)/home');
           } else {
-            router.replace('/choose-role');
+            // Not authenticated, show auth screen
+            router.replace('/auth');
           }
         }, 10000);
     
