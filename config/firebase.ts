@@ -3,14 +3,14 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
-// Replace with your actual Firebase project credentials
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyAclqEhYVqp2SWbslzcsEEBY6aghAtKXCw",
+  authDomain: "university-of-greenwich-4cc5b.firebaseapp.com",
+  projectId: "university-of-greenwich-4cc5b",
+  storageBucket: "university-of-greenwich-4cc5b.firebasestorage.app",
+  messagingSenderId: "1001931786048",
+  appId: "1:1001931786048:web:55073ccbc930524b661ca5",
+  measurementId: "G-QZDD2X074E"
 };
 
 // Initialize Firebase

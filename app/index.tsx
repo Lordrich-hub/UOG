@@ -56,8 +56,8 @@ export default function Index() {
           } else if (userRole === 'staff') {
             router.replace('/(staff)/home');
           } else {
-            // Not authenticated, show auth screen
-            router.replace('/auth');
+            // Not authenticated, show role selection screen
+            router.replace('/choose-role');
           }
         }, 10000);
     

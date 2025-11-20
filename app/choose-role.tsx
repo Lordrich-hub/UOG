@@ -10,12 +10,8 @@ export default function ChooseRole() {
   const insets = useSafeAreaInsets();
 
   const selectRole = async (role: 'student' | 'staff') => {
-    await AsyncStorage.setItem('userRole', role);
-    if (role === 'student') {
-      router.replace('/(tabs)/home');
-    } else {
-      router.replace('/(staff)/home');
-    }
+    // Navigate to auth screen with the selected role
+    router.push(`/auth?role=${role}`);
   };
 
   return (
